@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c39cf937-29de-4689-81b2-aebba35c3ce1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="241"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     lembur.`id_karyawan` AS lembur_id_karyawan,
+     lembur.`nama` AS lembur_nama,
+     lembur.`id_lembur` AS lembur_id_lembur,
+     lembur.`lembur` AS lembur_lembur,
+     lembur.`uang_lembur` AS lembur_uang_lembur
+FROM
+     `lembur` lembur]]>
+	</queryString>
+	<field name="lembur_id_karyawan" class="java.lang.String"/>
+	<field name="lembur_nama" class="java.lang.String"/>
+	<field name="lembur_id_lembur" class="java.lang.String"/>
+	<field name="lembur_lembur" class="java.lang.String"/>
+	<field name="lembur_uang_lembur" class="java.lang.String"/>
+	<background>
+		<band height="555" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="9" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="136" splitType="Stretch">
+			<image>
+				<reportElement x="199" y="12" width="59" height="64" uuid="e3167a78-74a8-42c8-b781-72e5bdd0344c"/>
+				<imageExpression><![CDATA["C:\\xampp\\htdocs\\penggajianPTquatro\\src\\Gambar\\logo-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="258" y="22" width="402" height="42" uuid="7f7dc9fc-4c62-466a-966d-8025cf6c4ffa"/>
+				<textElement>
+					<font fontName="Times New Roman" size="30"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Lembur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="64" width="177" height="25" uuid="021de48e-304d-4be6-930d-a3b51685c3c9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[PT QUATRO ASIA JAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="89" width="304" height="20" uuid="02648055-33d3-4226-b13d-01db4ccc6999"/>
+				<text><![CDATA[Jl. Taman Sari X No.10. Tamansari Jakarta Barat, 11150]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="174" y="41" width="100" height="20" backcolor="#006666" uuid="9c0344c8-97ee-4df4-bbc5-0fcaa0e7c454"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="274" y="41" width="100" height="20" backcolor="#006666" uuid="0ba0fc06-1ba9-431a-b6fc-31a0dd3c171a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="374" y="41" width="100" height="20" backcolor="#006666" uuid="236891ec-2150-4cc7-84c8-972765743e5f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="474" y="41" width="100" height="20" backcolor="#006666" uuid="756a7916-fab5-4983-86bd-1212cd0b3743"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="574" y="41" width="100" height="20" backcolor="#006666" uuid="8e558507-7e60-4ce4-83f0-83e0d6ad2116"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="190" y="41" width="73" height="20" uuid="595988ff-4642-4a33-bfc9-1bd355b7fcd0"/>
+				<text><![CDATA[ID Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="41" width="87" height="20" uuid="30746315-5096-44f2-8181-6202382134c2"/>
+				<text><![CDATA[Nama Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="387" y="41" width="87" height="20" uuid="43f2e388-ee34-452b-94f3-6a3a124b7031"/>
+				<text><![CDATA[ID Lembur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="41" width="78" height="20" uuid="bd307357-1923-4e8b-b03c-27845f022dae"/>
+				<text><![CDATA[Jam Lembur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="586" y="41" width="77" height="20" uuid="817cb0ce-f3ed-4ff8-8154-67f2c97faff4"/>
+				<text><![CDATA[Uang Lembur]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="11" width="802" height="1" uuid="d7df7a35-9ec4-48fd-a19a-7f2f4c8b58c3"/>
+			</line>
+			<line>
+				<reportElement x="10" y="22" width="802" height="1" uuid="96647b3d-1ff8-4f41-9ab6-9589c40986f2"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="175" y="0" width="100" height="20" uuid="37ad657c-9b54-41c0-bc65-f62c2ef416f3"/>
+			</rectangle>
+			<textField>
+				<reportElement x="175" y="0" width="99" height="20" uuid="305e9ecb-bf71-439a-a780-0467b2ff163b"/>
+				<textFieldExpression><![CDATA[$F{lembur_id_karyawan}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Opaque" x="275" y="0" width="100" height="20" uuid="d1c786b0-242b-442a-b76c-d15d20b16b74"/>
+			</rectangle>
+			<textField>
+				<reportElement x="288" y="0" width="87" height="20" uuid="6a05894c-7fed-47f7-ad64-dd8c915be5d0"/>
+				<textFieldExpression><![CDATA[$F{lembur_nama}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="375" y="0" width="100" height="20" uuid="2857204e-979d-4673-815b-cbfd6ab0049d"/>
+			</rectangle>
+			<textField>
+				<reportElement mode="Opaque" x="387" y="0" width="88" height="20" uuid="f0cba542-a0e6-4035-9ea8-c3e8137a49ef"/>
+				<textFieldExpression><![CDATA[$F{lembur_id_lembur}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Opaque" x="474" y="0" width="100" height="20" uuid="424a645b-c876-4098-86c8-19c35fd435ed"/>
+			</rectangle>
+			<textField>
+				<reportElement mode="Opaque" x="475" y="0" width="100" height="20" uuid="c1d4b843-deea-4b1f-bb99-6bacc547f2f1"/>
+				<textFieldExpression><![CDATA[$F{lembur_lembur}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="574" y="0" width="100" height="20" uuid="180399ed-15dd-4860-8222-a9368b7e97ff"/>
+			</rectangle>
+			<textField>
+				<reportElement x="586" y="0" width="88" height="20" uuid="56c8b001-7c87-499f-ae4f-dd59ff5733a6"/>
+				<textFieldExpression><![CDATA[$F{lembur_uang_lembur}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="17" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="635" y="10" width="37" height="20" uuid="ae7fcfb3-537f-4944-b796-cb2b38e8cb2a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="672" y="10" width="100" height="20" uuid="be5ae6bc-6e30-4892-a51e-b1a95d02e327"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="635" y="30" width="101" height="20" uuid="51c01136-12d2-4068-a546-87714f866890"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Pinpinan Perusahaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="635" y="120" width="112" height="20" uuid="ab6a977f-2f8b-4dde-98fe-7d1d14070a2c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Rizki Ari Nurhidayat]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="84" splitType="Stretch"/>
+	</summary>
+</jasperReport>

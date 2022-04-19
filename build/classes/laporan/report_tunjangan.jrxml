@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="05c9c950-fd83-4dfd-aec0-834c31993863">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="241"/>
+	<property name="ireport.y" value="43"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tunjangan.`Id_karyawan` AS tunjangan_Id_karyawan,
+     tunjangan.`nama` AS tunjangan_nama,
+     tunjangan.`id_tunjangan` AS tunjangan_id_tunjangan,
+     tunjangan.`Nama_tunjangan` AS tunjangan_Nama_tunjangan,
+     tunjangan.`jumlah_tunjangan` AS tunjangan_jumlah_tunjangan
+FROM
+     `tunjangan` tunjangan]]>
+	</queryString>
+	<field name="tunjangan_Id_karyawan" class="java.lang.String"/>
+	<field name="tunjangan_nama" class="java.lang.String"/>
+	<field name="tunjangan_id_tunjangan" class="java.lang.Integer"/>
+	<field name="tunjangan_Nama_tunjangan" class="java.lang.String"/>
+	<field name="tunjangan_jumlah_tunjangan" class="java.lang.String"/>
+	<background>
+		<band height="555" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="8" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="164" splitType="Stretch">
+			<image>
+				<reportElement x="199" y="12" width="59" height="64" uuid="99412134-44a8-4901-91c7-548eebfff889"/>
+				<imageExpression><![CDATA["C:\\xampp\\htdocs\\penggajianPTquatro\\src\\Gambar\\logo-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="258" y="22" width="402" height="42" uuid="8beed4e6-9a60-452f-8219-d41367af4ba3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="30"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Tunjangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="64" width="177" height="25" uuid="2dac5ff0-cb59-4690-876b-73bd479a127d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[PT QUATRO ASIA JAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="89" width="304" height="20" uuid="4ddf1873-b361-4af0-95d1-fed725733b30"/>
+				<text><![CDATA[Jl. Taman Sari X No.10. Tamansari Jakarta Barat, 11150]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="171" y="41" width="100" height="20" backcolor="#006666" uuid="1f7e8ed4-560a-4253-9d5a-c6e409cea4e9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="271" y="41" width="100" height="20" backcolor="#006666" uuid="b9718cdc-93f0-49d1-aa5f-cad2f3bb79cf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="371" y="41" width="100" height="20" backcolor="#006666" uuid="adadfcd1-b18a-46e1-8397-32938eddc564"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="471" y="41" width="100" height="20" backcolor="#006666" uuid="55857395-b80e-4674-9a4c-98ec9ff05744"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="571" y="41" width="100" height="20" backcolor="#006666" uuid="9fd4ff79-0731-419f-ad49-07cbf8f7c628"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="187" y="41" width="84" height="20" uuid="175338fc-1a02-4bb4-9e9e-406e697579f5"/>
+				<text><![CDATA[ID Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="41" width="87" height="20" uuid="45d55b0d-85fe-4a98-adfb-822ead6cef91"/>
+				<text><![CDATA[Nama Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="41" width="91" height="20" uuid="2d1b8edb-004f-41ab-9df4-547d59b9a2ca"/>
+				<text><![CDATA[ID Tunjangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="484" y="41" width="84" height="20" uuid="c2464ff8-2268-4ecc-b5fb-a1769823d9db"/>
+				<text><![CDATA[Jenis Tunjangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="582" y="41" width="84" height="20" uuid="68cf6944-baca-4fee-b783-0f6e501c22e8"/>
+				<text><![CDATA[Uang Tunjangan]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="12" width="802" height="1" uuid="505f2ae9-0c53-47dd-9648-9fb9c793219f"/>
+			</line>
+			<line>
+				<reportElement x="10" y="22" width="802" height="1" uuid="00e1df0e-d34f-423e-a800-49f7d4081dee"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="171" y="0" width="100" height="20" uuid="25179fde-5d68-4fba-80d6-356e68c6a2f4"/>
+			</rectangle>
+			<textField>
+				<reportElement x="187" y="0" width="84" height="20" uuid="dea22bc5-4815-4687-8131-fb2c7eea1834"/>
+				<textFieldExpression><![CDATA[$F{tunjangan_Id_karyawan}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="271" y="0" width="100" height="20" uuid="c3fe75c4-d5b8-475b-b9ce-548942e4303d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="371" y="0" width="100" height="20" uuid="9cdbf0cf-df3e-4ce5-ae4a-29b8cdbd7fbb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="471" y="0" width="100" height="20" uuid="1c2951a8-c52f-4b1a-8e93-468ce194f904"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="571" y="0" width="100" height="20" uuid="fc450e5c-1f85-450d-b9c2-9ac2e42836e9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="284" y="0" width="87" height="20" uuid="daabb10a-1894-4edc-ac85-ef13fafc4d9a"/>
+				<textFieldExpression><![CDATA[$F{tunjangan_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="91" height="20" uuid="fd85178d-0682-4f94-a389-86cddc1b85e2"/>
+				<textFieldExpression><![CDATA[$F{tunjangan_id_tunjangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="484" y="0" width="87" height="20" uuid="cab22ccd-0b31-4ce2-8bc7-2cf03dcd2c4e"/>
+				<textFieldExpression><![CDATA[$F{tunjangan_Nama_tunjangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="587" y="0" width="84" height="20" uuid="700eefc7-4f22-41a8-a30a-5e6e7cb787df"/>
+				<textFieldExpression><![CDATA[$F{tunjangan_jumlah_tunjangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="37" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement x="635" y="10" width="37" height="20" uuid="5fc70907-b256-4501-b06d-0ae7eeaf6f99"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="672" y="10" width="100" height="20" uuid="bf67be80-a861-4d59-8052-243c5ac80df1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="635" y="30" width="101" height="20" uuid="427536b1-5880-4e3a-b8e2-aca3915c7c6f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Pinpinan Perusahaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="635" y="118" width="112" height="20" uuid="d688218d-a5a5-4eac-b36d-292c285bc54e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Rizki Ari Nurhidayat]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

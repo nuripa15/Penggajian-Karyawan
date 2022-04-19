@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0ebdd6ac-3c8b-472f-81f5-577631c5e289">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="212"/>
+	<property name="ireport.y" value="136"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     karyawan.`NIK` AS karyawan_NIK,
+     karyawan.`Id_karyawan` AS karyawan_Id_karyawan,
+     karyawan.`nama` AS karyawan_nama,
+     karyawan.`no_telepon` AS karyawan_no_telepon,
+     karyawan.`tgl_lahir` AS karyawan_tgl_lahir,
+     karyawan.`alamat` AS karyawan_alamat
+FROM
+     `karyawan` karyawan]]>
+	</queryString>
+	<field name="karyawan_NIK" class="java.lang.String"/>
+	<field name="karyawan_Id_karyawan" class="java.lang.String"/>
+	<field name="karyawan_nama" class="java.lang.String"/>
+	<field name="karyawan_no_telepon" class="java.lang.String"/>
+	<field name="karyawan_tgl_lahir" class="java.lang.String"/>
+	<field name="karyawan_alamat" class="java.lang.String"/>
+	<background>
+		<band height="555" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="4" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="132" splitType="Stretch">
+			<staticText>
+				<reportElement x="326" y="54" width="177" height="25" uuid="5512db48-2f57-4b42-b9d1-8cd2b9271868"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[PT QUATRO ASIA JAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="79" width="304" height="20" uuid="a627f964-71b3-4a99-9071-8f054dadbba2"/>
+				<text><![CDATA[Jl. Taman Sari X No.10. Tamansari Jakarta Barat, 11150]]></text>
+			</staticText>
+			<image>
+				<reportElement x="189" y="2" width="59" height="64" uuid="f415d52c-6fd0-4ce2-b99e-8045f995b00c"/>
+				<imageExpression><![CDATA["C:\\xampp\\htdocs\\penggajianPTquatro\\src\\Gambar\\logo-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="248" y="12" width="402" height="42" uuid="32d47655-b4a4-4d42-a244-a5530bb14b81"/>
+				<textElement>
+					<font fontName="Times New Roman" size="30"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Karyawan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="103" y="41" width="100" height="20" uuid="c1b48c59-f468-4354-83f8-2b6faa820007"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="103" y="41" width="100" height="20" forecolor="#FFFFFF" backcolor="#006666" uuid="51a3bb2c-6133-4d65-be0a-e431b04a28b0"/>
+				<text><![CDATA[             NIK]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="603" y="41" width="100" height="20" uuid="abf3aed9-44e0-4a43-b99d-e7e60a47c3b0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="503" y="41" width="100" height="20" uuid="f58b5af9-de69-415f-98e7-629905811588"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="403" y="41" width="100" height="20" uuid="61355fa5-c234-42b1-831a-49a5f63de2ec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="41" width="100" height="20" uuid="37ce2177-046e-424f-afb3-d6242b048a68"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="203" y="41" width="100" height="20" uuid="b48dbc0f-79c0-4629-96fe-119ece21c7ba"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="203" y="41" width="100" height="20" forecolor="#FFFFFF" backcolor="#006666" uuid="0bac2ac4-090e-432e-9684-93d4f0bddec0"/>
+				<text><![CDATA[       ID Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="303" y="41" width="100" height="20" forecolor="#FFFFFF" backcolor="#006666" uuid="cfb3dedd-0199-444d-9dc3-373778ca953a"/>
+				<text><![CDATA[           Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="403" y="41" width="100" height="20" forecolor="#FFFFFF" backcolor="#006666" uuid="82b5e918-bc21-48e9-8daf-7aed1145c605"/>
+				<text><![CDATA[       No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="503" y="41" width="100" height="20" forecolor="#FFFFFF" backcolor="#006666" uuid="6d3e14d5-1822-416a-85d3-b515b25a8a29"/>
+				<text><![CDATA[      Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="603" y="41" width="100" height="20" forecolor="#FFFFFF" backcolor="#006666" uuid="645be208-efe6-4f50-a8f4-1bfaa4a84ced"/>
+				<text><![CDATA[          Alamat]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="12" width="802" height="1" uuid="54075c72-62cb-4ab5-a0ce-dcd52ecda0c5"/>
+			</line>
+			<line>
+				<reportElement x="0" y="23" width="802" height="1" uuid="21deea44-f19b-45e2-97c2-b154f0c9a7dc"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="103" y="0" width="100" height="20" uuid="25796935-cdc5-4c7e-94d5-f29ad274eef2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="203" y="0" width="100" height="20" uuid="de35e4ff-d6b7-453d-aee7-0625157dee7d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="303" y="0" width="100" height="20" uuid="558017ef-826f-4915-b965-00d52a7e6c54"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="403" y="0" width="100" height="20" uuid="2438faa3-8181-4576-ac58-d83c02794849"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="503" y="0" width="100" height="20" uuid="56e7431b-cca4-49a6-b64d-3ebcbf4d450c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="603" y="0" width="100" height="20" uuid="6ebd328e-2157-4ac5-83dc-d1ae8870016c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="137" y="0" width="38" height="20" uuid="01af2729-8fc1-4083-97da-fc96271aef22"/>
+				<textFieldExpression><![CDATA[$F{karyawan_NIK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="0" width="59" height="20" uuid="4aa274a2-394a-443d-b433-366fcfff9c1b"/>
+				<textFieldExpression><![CDATA[$F{karyawan_Id_karyawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="0" width="51" height="20" uuid="b71ed64e-0adc-402f-b15e-4200e50d9862"/>
+				<textFieldExpression><![CDATA[$F{karyawan_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="431" y="0" width="72" height="20" uuid="77e1011a-4c30-4059-a565-d446cb0dfd8a"/>
+				<textFieldExpression><![CDATA[$F{karyawan_no_telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="0" width="73" height="20" uuid="d93aa4e9-e3ef-44d0-b9b0-ff12e3e4c78f"/>
+				<textFieldExpression><![CDATA[$F{karyawan_tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="625" y="0" width="78" height="20" uuid="c37ff572-8f35-485a-a17e-dcca9ed6aa2b"/>
+				<textFieldExpression><![CDATA[$F{karyawan_alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="4" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="178" splitType="Stretch">
+			<staticText>
+				<reportElement x="625" y="20" width="101" height="20" uuid="8c1970e9-222f-48c6-8221-8269a7481526"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Pinpinan Perusahaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="625" y="0" width="37" height="20" uuid="cd91aa27-529d-4a26-825a-7a2b05b4673b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="662" y="0" width="100" height="20" uuid="9c0d6434-cd3b-4708-8f7a-4e86ae153261"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="625" y="122" width="112" height="20" uuid="4a7f699b-3e01-4963-ba23-f57c2bdbc30a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Rizki Ari Nurhidayat]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="91" splitType="Stretch"/>
+	</summary>
+</jasperReport>

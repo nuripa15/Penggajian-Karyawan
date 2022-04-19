@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="497119d4-c13a-490c-ac87-f6f47bad973f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="177"/>
+	<property name="ireport.y" value="138"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     absensi.`nama` AS absensi_nama,
+     absensi.`Id_karyawan` AS absensi_Id_karyawan,
+     absensi.`id_absensi` AS absensi_id_absensi,
+     absensi.`waktu_absen_masuk` AS absensi_waktu_absen_masuk,
+     absensi.`waktu_absen_keluar` AS absensi_waktu_absen_keluar
+FROM
+     `absensi` absensi]]>
+	</queryString>
+	<field name="absensi_nama" class="java.lang.String"/>
+	<field name="absensi_Id_karyawan" class="java.lang.String"/>
+	<field name="absensi_id_absensi" class="java.lang.String"/>
+	<field name="absensi_waktu_absen_masuk" class="java.lang.String"/>
+	<field name="absensi_waktu_absen_keluar" class="java.lang.String"/>
+	<background>
+		<band height="555" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="147" splitType="Stretch">
+			<staticText>
+				<reportElement x="258" y="22" width="402" height="42" uuid="f73cea10-d7a5-402c-89b1-9fee591b525e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="30"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Absensi]]></text>
+			</staticText>
+			<image>
+				<reportElement x="199" y="12" width="59" height="64" uuid="f237afab-5a0a-4a94-8baa-f37b94192fa1"/>
+				<imageExpression><![CDATA["C:\\xampp\\htdocs\\penggajianPTquatro\\src\\Gambar\\logo-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="336" y="64" width="177" height="25" uuid="1d4b9314-bf52-4065-bdd1-6bd6c79c5ddc"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[PT QUATRO ASIA JAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="99" width="304" height="20" uuid="a727bc8d-61ac-46ef-a791-863604c89656"/>
+				<text><![CDATA[Jl. Taman Sari X No.10. Tamansari Jakarta Barat, 11150]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="105" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="157" y="85" width="100" height="20" backcolor="#006666" uuid="a96277f6-c587-4172-9b4d-5b5913370ed9"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="165" y="85" width="80" height="20" uuid="4717ee5e-364e-4361-9701-4a3f4761df21"/>
+				<text><![CDATA[Nama Karyawan]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="257" y="85" width="100" height="20" backcolor="#006666" uuid="2954c048-f42c-42c9-a485-f43b0d2e7a68"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="268" y="85" width="89" height="20" uuid="112c2339-e7b2-4f6b-a864-eca0b101e995"/>
+				<text><![CDATA[ID Karyawan]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="357" y="85" width="100" height="20" backcolor="#006666" uuid="0b30b872-d4a8-48a4-91ec-d64da9223458"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="360" y="85" width="88" height="20" uuid="e25bb86a-7e9e-45d6-a925-7faf344cdde1"/>
+				<text><![CDATA[ Absensi]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="457" y="85" width="100" height="20" backcolor="#006666" uuid="670df419-6641-436c-9fb9-8580b1039f14"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="471" y="85" width="77" height="20" uuid="4498f9d8-8a51-46af-bb40-e9a13236e6b9"/>
+				<text><![CDATA[Absen Masuk]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="557" y="85" width="100" height="20" backcolor="#006666" uuid="48ac3f63-4d90-445e-8be9-eb68ed464f3a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="567" y="85" width="90" height="20" uuid="fb41fadc-0aff-40d7-88f8-9441af46b401"/>
+				<text><![CDATA[Absen Keluar]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="22" width="802" height="1" uuid="e28e2174-fd6a-4f54-b9ff-3760c8f4c9f1"/>
+			</line>
+			<line>
+				<reportElement x="10" y="33" width="802" height="1" uuid="bc47c25a-cd2e-4c41-bd5b-2e2f1c4570c8"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="157" y="0" width="100" height="20" uuid="ae791dac-831e-40ba-950a-8a67e7e787fd"/>
+			</rectangle>
+			<textField>
+				<reportElement x="160" y="0" width="100" height="20" uuid="427d4ca0-7db6-4298-a264-1a24b44cfd78"/>
+				<textFieldExpression><![CDATA[$F{absensi_nama}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="257" y="0" width="100" height="20" uuid="84a4649e-f122-4c21-8fc4-7fcc94d8ddd1"/>
+			</rectangle>
+			<textField>
+				<reportElement x="260" y="0" width="100" height="20" uuid="4939bf9c-536e-443c-bbae-c1f90280bf4b"/>
+				<textFieldExpression><![CDATA[$F{absensi_Id_karyawan}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Opaque" x="357" y="0" width="100" height="20" uuid="b7a84004-d751-480e-bb1a-77debcd9665a"/>
+			</rectangle>
+			<textField>
+				<reportElement x="360" y="0" width="100" height="20" uuid="aa153fad-52a9-4bf5-b653-1c1f37cbec88"/>
+				<textFieldExpression><![CDATA[$F{absensi_id_absensi}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="457" y="0" width="100" height="20" uuid="8d938f63-4094-475c-8a44-f6bd3cec756c"/>
+			</rectangle>
+			<textField>
+				<reportElement mode="Opaque" x="459" y="0" width="100" height="20" uuid="5426ca72-d4f8-4c1b-b325-f9908d3a6f5c"/>
+				<textFieldExpression><![CDATA[$F{absensi_waktu_absen_masuk}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="557" y="0" width="100" height="20" uuid="1a6486d1-e6d2-4da1-a481-1f04ff01fd40"/>
+			</rectangle>
+			<textField>
+				<reportElement mode="Opaque" x="558" y="0" width="97" height="20" uuid="2465cb0d-1b2b-4901-820c-64d1a405eee9"/>
+				<textFieldExpression><![CDATA[$F{absensi_waktu_absen_keluar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="9" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="635" y="10" width="37" height="20" uuid="2b477008-ce26-4163-acf2-7433c41bb807"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="672" y="10" width="100" height="20" uuid="818a0eed-de40-4411-af1a-b130a4812bfa"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="645" y="30" width="101" height="20" uuid="9706fb63-7547-45b4-82db-3d4e88eddf95"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Pinpinan Perusahaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="645" y="105" width="112" height="20" uuid="c2232ee2-c1b3-44d8-8f76-a67abbfdefb9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Rizki Ari Nurhidayat]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
